@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        background-color: lightcoral;
+        font-style: italic;
+        font-weight: bold;
+      }
+      div {
+        height: 70vh;
+        width: 30vw;
+        background-color: lightblue;
+        margin-left: 600px;
+        margin-top: 70px;
+      }
+      p {
+        font-size: 40px;
+        margin-left: 170px;
+        padding-top: 20px;
+        font-weight: bolder;
+      }
+      input {
+        height: 50px;
+        margin-left: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <div>
+      <p>Fahrenheit</p>
+      <input
+        type="number"
+        id="fahrenheit"
+        oninput="fahrenheitConversion(this.value)"
+        placeholder="Fahrenheit"
+      />
+      <p>Celsius</p>
+      <input
+        type="number"
+        id="celsius"
+        oninput="celsiusConversion(this.value)"
+        placeholder="Celsius"
+      />
+      <p>Kelvin</p>
+      <input
+        type="number"
+        id="kelvin"
+        oninput="kelvinConversion(this.value)"
+        placeholder="Kelvin"
+      />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
